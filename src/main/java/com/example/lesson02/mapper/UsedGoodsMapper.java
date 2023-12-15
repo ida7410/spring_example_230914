@@ -11,6 +11,6 @@ public interface UsedGoodsMapper {
 	
 	// input: x (BO에게 받음)
 	// output: (DB의 query문을 실행해서) List<UsedGoods> (BO에 보냄)
-	public List<UsedGoods> selectUsedGoods();
+	public List<UsedGoods> selectUsedGoodsList();
 	
 }

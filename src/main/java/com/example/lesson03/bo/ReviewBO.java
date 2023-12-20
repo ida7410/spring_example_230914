@@ -11,6 +11,7 @@ public class ReviewBO {
 	
 	@Autowired
 	private ReviewMapper reviewMapper;
+	// 주석 추가
 	
 	// input: int id
 	// output: Review (to Controller)

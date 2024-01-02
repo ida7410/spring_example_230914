@@ -1,5 +1,7 @@
 package com.example.lesson04.bo;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +24,10 @@ public class UserBO {
 	// ouput: User(있거나 null)
 	public User getLatestUser() {
 		return userMapper.selectLatestUser();
+	}
+	
+	public boolean isDuplicatedByName(String name) {
+		return userMapper.isDuplicatedByName(name);
 	}
 	
 }

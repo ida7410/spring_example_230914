@@ -1,5 +1,7 @@
 package com.example.lesson04.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -19,5 +21,7 @@ public interface UserMapper {
 	// input: x
 	// ouput: User
 	public User selectLatestUser();
+	
+	public boolean isDuplicatedByName(String name);
 
 }

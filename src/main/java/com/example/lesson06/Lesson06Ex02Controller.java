@@ -1,4 +1,4 @@
-package com.example.test.temp.lesson06;
+package com.example.lesson06;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.lesson04.bo.UserBO;
 
-@RequestMapping("/temp/lesson06/ex02")
+@RequestMapping("/lesson06/ex02")
 @Controller
 public class Lesson06Ex02Controller {
 	
@@ -21,7 +21,7 @@ public class Lesson06Ex02Controller {
 	
 	@GetMapping("/add-user-view")
 	public String addUserView() {
-		return "temp/lesson06/ex02AddUser";
+		return "lesson06/ex02AddUser";
 	}
 	
 	// check is duplicated - ajax request
